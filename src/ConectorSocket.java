@@ -10,7 +10,7 @@ import java.net.Socket;
  * 
  */
 
-public class Conector {
+public class ConectorSocket {
 	private static BufferedReader stdin=new BufferedReader(new InputStreamReader(System.in));
 	ServerSocket server;
 	Socket socket;
