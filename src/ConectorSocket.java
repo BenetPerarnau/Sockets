@@ -24,13 +24,17 @@ public class ConectorSocket {
 		try{
 			
 			server = new ServerSocket(puerto);
+			System.out.println("Servidor iniciat");
 			socket = new Socket();
 			socket = server.accept();
 			
-			do{
-					
 			entrada = new BufferedReader (new InputStreamReader(socket.getInputStream()));
 			salida = new DataOutputStream(socket.getOutputStream());
+			
+			System.out.println("Client conectat als Servidor");
+			
+			do{
+					
 			
 			msgE=entrada.readLine();
 			
